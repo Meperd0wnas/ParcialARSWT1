@@ -31,7 +31,8 @@ public class PiDigits {
             int segmento = count/N;
             PiDigitsThreads hilo = new PiDigitsThreads(start,segmento);
             hilo.run();
-            digitsC =  hilo.digits;
+            digitsC = hilo.digits;
+    
 
         }
 

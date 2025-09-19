@@ -11,7 +11,7 @@ public class PiDigitsThreads extends Thread {
 
 
 
-    public PiDigitsThreads(int Start, int count){
+    public PiDigitsThreads(int start, int count){
         this.start = start;
         this.count = count;
         this.digits = new byte[count];
