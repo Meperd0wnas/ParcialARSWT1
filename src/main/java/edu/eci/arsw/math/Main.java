@@ -5,8 +5,6 @@
  */
 package edu.eci.arsw.math;
 
-import java.util.Arrays;
-
 /**
  *
  * @author hcadavid
