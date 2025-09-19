@@ -1,18 +1,24 @@
 package edu.eci.arsw.math;
 
-import java.util.concurrent.atomic.AtomicBoolean;
 
 public class PiDigitsThreads extends Thread {
-    private Integer start;
-    private Integer end;
+    private int start;
+    private int count;
+    private PiDigits digits;
+    private Boolean lock;
 
-    public PiDigitsThreads(Integer Start, Integer end){
+
+
+    public PiDigitsThreads(int Start, int count){
         this.start = start;
-        this.end = end;
+        this.count = count;
     }
 
     @Override
     public void run() {
+        
+        
+        
 
 
         }
