@@ -7,8 +7,6 @@ package edu.eci.arsw.math;
 ///  *** Translated from C# code: https://github.com/mmoroney/DigitsOfPi ***
 ///  </summary>
 public class PiDigits {
-    private static int DigitsPerSum = 8;
-    private static double Epsilon = 1e-17;
 
     
     /**
@@ -27,17 +25,18 @@ public class PiDigits {
             throw new RuntimeException("Invalid Interval");
         }
 
-        byte[] digits = new byte[0];
+        byte[] digitsC = new byte[0];
 
         for(int i = 0; i<= N; i++){
             int segmento = count/N;
             PiDigitsThreads hilo = new PiDigitsThreads(start,segmento);
             hilo.run();
+            
 
 
         }
 
-        return digits;
+        return digitsC;
     }
 
 
