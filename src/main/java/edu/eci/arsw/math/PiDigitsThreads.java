@@ -5,7 +5,7 @@ public class PiDigitsThreads extends Thread {
     private int start;
     private int count;
     private Boolean lock;
-    private byte[] digits;
+    public byte[] digits;
     private static int DigitsPerSum = 8;
     private static double Epsilon = 1e-17;
 
@@ -14,11 +14,11 @@ public class PiDigitsThreads extends Thread {
     public PiDigitsThreads(int Start, int count){
         this.start = start;
         this.count = count;
+        this.digits = new byte[count];
     }
 
     @Override
     public void run() {
-        byte[] digits = new byte[count];
         double sum = 0;
 
         for (int i = 0; i < count; i++) {
